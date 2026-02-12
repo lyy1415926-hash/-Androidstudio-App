@@ -1,0 +1,7 @@
+<resources>
+
+    <style name="Theme.CampusInfoApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="topBarColor">@color/topBarNightColor</item>
+    </style>
+
+</resources>

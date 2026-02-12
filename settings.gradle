@@ -1,0 +1,25 @@
+pluginManagement {
+    repositories {
+        google()                                      // 插件必须优先走官方
+        gradlePluginPortal()
+        mavenCentral()
+        // maven { url 'https://maven.aliyun.com/repository/public' }    // 可留可删
+        // maven { url 'https://developer.huawei.com/repo/' }           // 华为推送才需要
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()                                      // 第一行！必须第一行！
+        mavenCentral()                                // 第二行
+        // 下面这些全部删掉或注释！！！
+        // maven { url 'https://maven.aliyun.com/repository/google' }
+        // maven { url 'https://maven.aliyun.com/repository/public' }
+        // maven { url 'https://developer.huawei.com/repo/' }
+        // maven { url 'https://mirrors.tencent.com/nexus/repository/maven-public/' }
+    }
+}
+
+rootProject.name = "CampusInfoApp"
+include ':app'

@@ -1,0 +1,28 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- 白天 + 夜间共用主题，因为 DayNight 会自动根据系统切 -->
+    <style name="Theme.CampusInfoApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+
+        <!-- Primary brand color (白天模式) -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Secondary brand color -->
+
+        <item name="colorOnSecondary">@color/black</item>
+
+        <!-- 状态栏颜色 -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+
+        <!-- 全局背景/文字颜色 -->
+        <item name="android:windowBackground">@color/white</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="android:textColorSecondary">@color/black</item>
+
+        <!-- ⭐ 自定义顶部条颜色（白天）-->
+        <item name="topBarColor">@color/topBarDayColor</item>
+
+    </style>
+
+</resources>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lang"> <!-- 你的背景图 -->
+
+    <!-- 搜索框 -->
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/searchViewCourse"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:queryHint="搜索课程" />
+
+    <!-- 课程名输入框 -->
+    <EditText
+        android:id="@+id/etCourseName"
+        android:hint="课程名"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"/>
+
+    <!-- 教师输入框 -->
+    <EditText
+        android:id="@+id/etCourseTeacher"
+        android:hint="教师"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"/>
+
+    <!-- 日期选择框 -->
+    <EditText
+        android:id="@+id/etCourseDate"
+        android:hint="选择日期"
+        android:focusable="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"/>
+
+    <!-- 时间选择框 -->
+    <EditText
+        android:id="@+id/etCourseTime"
+        android:hint="选择时间"
+        android:focusable="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"/>
+
+    <!-- 添加课程按钮 -->
+    <Button
+        android:id="@+id/btnAddCourse"
+        android:text="添加课程"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"/>
+
+    <!-- 课程列表 RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewCourses"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>

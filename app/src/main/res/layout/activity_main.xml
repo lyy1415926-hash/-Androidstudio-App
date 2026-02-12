@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bce"
+    android:padding="16dp">
+
+    <!-- 顶部条 -->
+    <View
+        android:id="@+id/topBar"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="?attr/topBarColor"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- 标题（居中） -->
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="校园信息助手"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toTopOf="@id/topBar"
+        app:layout_constraintBottom_toBottomOf="@id/topBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- 登录/注册按钮 -->
+    <Button
+        android:id="@+id/btnLoginMain"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:text="登录/注册"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="120dp"/> <!-- 页面 1/3 大约位置 -->
+
+    <!-- 校园新闻按钮 -->
+    <Button
+        android:id="@+id/btnNewsMain"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:text="校园新闻"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/btnLoginMain"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- 课程表按钮 -->
+    <Button
+        android:id="@+id/btnScheduleMain"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:text="课程表"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/btnNewsMain"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- 天气查询按钮 -->
+    <Button
+        android:id="@+id/btnWeatherMain"
+        android:layout_width="0dp"
+        android:layout_height="80dp"
+        android:text="天气查询"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/btnScheduleMain"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"/>
+
+    <!-- 夜间模式开关 -->
+    <Switch
+        android:id="@+id/switchNightMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="夜间模式"
+        android:textSize="12sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

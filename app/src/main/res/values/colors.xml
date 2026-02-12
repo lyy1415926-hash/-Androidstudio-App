@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- App 默认颜色（你原来就有的） -->
+    <color name="purple_200">#BB86FC</color>
+    <color name="purple_500">#6200EE</color>
+    <color name="purple_700">#3700B3</color>
+    <color name="teal_200">#03DAC5</color>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+
+    <!-- 新增顶部条颜色 -->
+    <color name="topBarDayColor">#6200EE</color>   <!-- 白天颜色 -->
+    <color name="topBarNightColor">#000000</color> <!-- 夜间颜色 -->
+
+</resources>
